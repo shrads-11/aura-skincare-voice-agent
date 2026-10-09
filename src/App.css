@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.header {
+  background: white;
+  padding: 25px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.header p {
+  margin: 5px 0 0;
+  color: #666;
+}
+
+.status-badge {
+  background: #e8f7ed;
+  color: #218838;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.main-content {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.agent-card {
+  background: white;
+  padding: 40px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.agent-icon {
+  font-size: 55px;
+}
+
+.agent-card h2 {
+  margin: 10px 0 5px;
+}
+
+.agent-description {
+  color: #666;
+}
+
+.agent-status {
+  margin: 25px 0;
+  font-weight: bold;
+}
+
+.agent-status span {
+  color: #888;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+button {
+  padding: 13px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.start-button {
+  background: #222;
+  color: white;
+}
+
+.end-button {
+  background: #eee;
+  color: #555;
+}
+
+.orders-section,
+.transcript-section {
+  margin-top: 35px;
+}
+
+.section-description {
+  color: #666;
+}
+
+.orders {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.order-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.order-card h3 {
+  margin-top: 0;
+}
+
+.order-card p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.transcript-box {
+  background: white;
+  min-height: 180px;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.empty-message {
+  color: #888;
+  text-align: center;
+  margin-top: 60px;
+}
+
+@media (max-width: 800px) {
+  .orders {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    padding: 20px;
+  }
+}
+.conversation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.transcript-message {
+  padding: 12px 16px;
+  border-radius: 10px;
+  background: #f5f5f5;
+}
+
+.transcript-message strong {
+  margin-right: 6px;
+}
